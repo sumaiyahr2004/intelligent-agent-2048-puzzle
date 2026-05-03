@@ -19,7 +19,7 @@ The core loop looks like this:
 - Alpha-beta pruning cuts off branches that cannot affect the final decision, allowing the search to go deeper within the 0.2 second time limit
 - A depth cutoff is used since the full game tree is too large to search completely; thus heuristics estimate the value of non-terminal nodes
 
-# heuristics
+## heuristics
 The board evaluation function combines several heuristics, each with a tuned weight:
 - Monotonicity: rewards boards where tile values consistently increase or decrease along rows and columns. This encourages keeping large tiles in a corner.
 - Smoothness: penalizes large differences between adjacent tiles. Boards where neighboring tiles have similar values are easier to merge.
