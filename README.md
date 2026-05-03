@@ -2,7 +2,7 @@
 
 This project entails an adversarial search agent that plays the 2048 puzzle game using the expectiminimax algorithm with alpha-beta pruning. The AI agent consistently reaches the 1024 and 2048 tiles by evaluating board states through a set of heuristic functions.
 
-[Play the original 2048 puzzle here!]((https://play2048.co))
+[Play the original 2048 puzzle here!](https://play2048.co)
 
 ## how does it work? 
 2048 is modeled as a two-player game. The Player AI tries to maximize the board score, while the Computer AI places tiles in positions that minimize the Player's outcome. Since the Computer AI places tiles randomly (90% chance of a 2, 10% chance of a 4), expectiminimax is used instead of pure minimax; it accounts for the probabilistic nature of the computer's moves by taking a weighted average over possible tile placements.
